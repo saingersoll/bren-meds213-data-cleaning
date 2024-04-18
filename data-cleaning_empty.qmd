@@ -28,7 +28,8 @@ Import the snow survey
 
 ```{r}
 # Import the species
-snowsurvey_csv <- read_csv(file.path(datadir_raw, snowsurvey_file))
+snowsurvey_csv <- read_csv(file.path(datadir_raw, snowsurvey_file),
+                           show_col_types = FALSE)
 
 glimpse(snowsurvey_csv)
 
@@ -160,7 +161,8 @@ write_csv(snowsurvey_fixed, file.path(datadir_processed, "snow_cover.csv"))
 Import the species csv files with the bird species information:
 
 ```{r}
-species_csv <- read_csv(file.path(datadir_raw, species_file))
+species_csv <- read_csv(file.path(datadir_raw, species_file),
+                        show_col_types = FALSE)
 
 glimpse(species_csv)
 ```
