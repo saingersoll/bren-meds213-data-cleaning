@@ -207,12 +207,12 @@ head(cleaned_cover, 3) %>%
   gt()
 ```
 
-# Save Cleaned Table as `all_cover_fixed_singeroll.csv`
+# Save Cleaned Table as `all_cover_fixed_singersoll.csv`
 
 We have 5199 observations in this table. The "convention" seems to be that `_` are used to separate the different parts of a name. Note that it is not clear what type of nomenclature reference is used to pull those names from.
 
 Let's write the presence table to a csv file:
 
 ```{r save_csv}
-write_csv(cleaned_cover, file.path(datadir_processed, "all_cover_fixed_singeroll.csv"))
+write_csv(cleaned_cover, file.path(datadir_processed, "all_cover_fixed_singersoll.csv"))
 ```
